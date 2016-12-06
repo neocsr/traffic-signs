@@ -96,7 +96,7 @@ def grayscale(images):
     n_images = images.shape[0]
     converted = []
     for i in range(0, n_images):
-        converted.append(cv2.cvtColor(X_train[i], cv2.COLOR_BGR2GRAY))
+        converted.append(cv2.cvtColor(images[i], cv2.COLOR_BGR2GRAY))
     return np.array(converted)
 
 
